@@ -21,4 +21,4 @@ The CEP dashboard summarizes the Kellogg Ranch research plan and my website-usab
 
 ## Before final submission
 
-Add my personal photo and confirm the biography and career-direction wording. Publish the site and repository when ready, then replace the local-only notices above with the two clickable URLs required by the assignment.
+Confirm the biography and career-direction wording. Publish the site and repository when ready, then replace the local-only notices above with the two clickable URLs required by the assignment.

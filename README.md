@@ -17,7 +17,7 @@ Push this project to a GitHub repository. In Settings → Pages, choose Deploy f
 
 ## Personalization still needed
 
-The home-page photo is explicitly a placeholder. Replace it with an authorized headshot and descriptive alt text. Confirm the career-direction wording and add exact degree details if desired. No degree completion, graduation date, or participant findings are invented.
+The home page includes the personal photo supplied for this portfolio. Confirm the career-direction wording and add exact degree details if desired. No degree completion, graduation date, or participant findings are invented.
 
 ## Data
 

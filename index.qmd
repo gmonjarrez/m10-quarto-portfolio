@@ -36,9 +36,7 @@ My current project work points toward customer insights and digital marketing an
 Customer Insight Methods and Survey Research (IBM 6500), digital marketing analytics, and the MSDM Culminating Experience Project.
 :::
 ::: {.column width="28%"}
-<div class="profile-placeholder" role="img" aria-label="Photo placeholder for Georgia Monjarrez"><b>GM</b><small>Personal photo pending</small></div>
-
-*Photo space reserved for my own headshot.*
+![Portrait of Georgia Monjarrez](assets/georgia-monjarrez.jpg){.profile-photo}
 :::
 :::
 

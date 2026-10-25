@@ -11,13 +11,13 @@ quarto preview
 
 Open `M10.Rproj` to work in RStudio. The four main pages are `index.qmd`, `dashboard.qmd`, `styling.qmd`, and `listings.qmd`. Project entries live in `projects/`; source data and provenance notes live in `data/`. Rendering writes the complete static site to `docs/`.
 
-## Publish with GitHub Pages
+## Published portfolio
 
-Push this project to a GitHub repository. In Settings → Pages, choose Deploy from a branch, branch `main`, folder `/docs`, and save. Include `docs/.nojekyll`. After deployment, replace the two pending entries in `submission.qmd` with the verified website and repository URLs and render again.
+- Website: https://gmonjarrez.github.io/m10-quarto-portfolio/
+- Repository: https://github.com/gmonjarrez/m10-quarto-portfolio
+- Submission report: `submission.qmd` and `docs/submission.html`
 
-## Personalization still needed
-
-The home page includes the personal photo supplied for this portfolio. Confirm the career-direction wording and add exact degree details if desired. No degree completion, graduation date, or participant findings are invented.
+GitHub Pages serves `docs/` from `main`. Render locally and push the updated source and output to update the website. The home page includes the personal photo supplied for this portfolio.
 
 ## Data
 

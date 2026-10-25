@@ -10,8 +10,8 @@ toc: false
 
 ## Assignment links
 
-1. **Published portfolio:** Not published; retained locally at my request.
-2. **GitHub repository:** Local repository only; public publication deferred.
+1. **Published portfolio:** [View the published website](https://gmonjarrez.github.io/m10-quarto-portfolio/).
+2. **GitHub repository:** [View the source repository](https://github.com/gmonjarrez/m10-quarto-portfolio).
 
 ## Portfolio contents
 

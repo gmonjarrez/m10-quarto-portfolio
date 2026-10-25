@@ -1,0 +1,116 @@
+---
+title: "Kellogg Ranch | CEP Research Plan"
+format:
+  dashboard:
+    theme: [cosmo, theme.scss]
+    orientation: rows
+    scrolling: true
+    nav-buttons: [none]
+    title-prefix: "Georgia Monjarrez"
+    css: styles.css
+execute:
+  echo: false
+---
+
+```{r}
+#| include: false
+objectives <- read.csv("data/cep-objectives.csv", stringsAsFactors = FALSE)
+tasks <- read.csv("data/usability-tasks.csv", stringsAsFactors = FALSE)
+observations <- read.csv("data/usability-observations-template.csv", stringsAsFactors = FALSE)
+stopifnot(nrow(objectives) == 5, nrow(tasks) == 3,
+          !anyDuplicated(objectives$objective), all(tasks$benchmark_pct == 80))
+```
+
+# Project overview
+
+## Row {height=150}
+
+```{r}
+#| content: valuebox
+list(icon = "bullseye", color = "primary", value = nrow(objectives), title = "Planned analytics objectives")
+```
+
+```{r}
+#| content: valuebox
+list(icon = "cursor", color = "secondary", value = nrow(tasks), title = "Website tasks to evaluate")
+```
+
+```{r}
+#| content: valuebox
+list(icon = "flag", color = "primary", value = paste0(unique(tasks$benchmark_pct), "%"), title = "Proposed completion target")
+```
+
+## Row
+
+### From awareness to a reservation
+
+The Restaurant at Kellogg Ranch CEP connects newsletter design, guest experience, social media, and website usability to a more accessible guest journey. **My contribution is AO4: website content, navigation, and usability.**
+
+This dashboard summarizes the documented research plan. The counts above describe objectives and planned tasks, not measured performance. The 80% target is a proposed project benchmark, not a published usability standard.
+
+[Home](index.qmd) · [Project listings](listings.qmd) · [Download objectives](data/cep-objectives.csv)
+
+### Measurement map
+
+```{r}
+#| label: tbl-objectives
+#| tbl-cap: "The five documented analytics objectives and their primary measures."
+knitr::kable(objectives[c("objective", "channel", "primary_measure")],
+  col.names = c("Objective", "Focus", "Primary measure"))
+```
+
+# Website usability
+
+## Row
+
+### Three tasks, one transparent target
+
+```{r}
+#| label: fig-targets
+#| fig-width: 9
+#| fig-height: 4
+#| fig-alt: "Three planned website usability tasks, each with a proposed 80 percent unassisted completion target. These are targets, not observed rates."
+library(ggplot2)
+ggplot(tasks, aes(x = benchmark_pct, y = reorder(task, -seq_along(task)))) +
+  geom_col(fill = "#164a46", width = .5) +
+  geom_text(aes(label = paste0(benchmark_pct, "% target")), hjust = -0.07, size = 4) +
+  scale_x_continuous(limits = c(0, 105), breaks = seq(0, 100, 20)) +
+  labs(x = "Proposed unassisted completion target (%)", y = NULL,
+       caption = "Planning values only. No participant performance is plotted.") +
+  theme_minimal(base_size = 13) +
+  theme(panel.grid.major.y = element_blank(), plot.caption = element_text(hjust = 0))
+```
+
+### Evidence collection
+
+For each prospective guest, record task, unassisted success, elapsed seconds, ease rating (1–5), device, and observed navigation barriers. Avoid names or contact details in the analysis file.
+
+```{r}
+#| results: asis
+if (nrow(observations) == 0) {
+  cat("**Observed results: not yet available in this portfolio.** No participant observations were supplied. Completion rates, median times, and ease ratings cannot yet be reported.")
+}
+```
+
+[Download the observation template](data/usability-observations-template.csv)
+
+## Row
+
+### How results will inform decisions
+
+| Measure | Calculation | Decision supported |
+|---|---|---|
+| Unassisted completion | Successful unassisted attempts / valid attempts × 100 | Identify tasks below the proposed 80% target |
+| Median successful time | Median seconds among successful unassisted attempts | Identify tasks that remain slow even when successful |
+| Ease of use | Distribution of valid 1–5 ratings per task | Locate perceived friction |
+| Qualitative barriers | Code recurring notes by task | Prioritize specific label, content, or placement changes |
+
+Report each denominator and missing-value count. A task with no valid attempts receives **NA**, not 0%. Small samples and device differences limit generalization. Reaching the reservation interface is not a completed reservation or evidence of revenue growth.
+
+### Source & reproducibility
+
+Planning source: Group 9, *A Filling Recipe for Open Tables at Kellogg Ranch*, October 17, 2026 version. AO4 is attributed to Georgia Monjarrez in that report. The CSV files summarize the objectives and task definitions; no participant records are included.
+
+The value boxes, table, and target chart are generated from local CSV files by R during rendering. Quarto produces a static HTML dashboard that can be hosted on GitHub Pages without an R server. Edit the source and re-render to update it.
+
+[Read the data notes](data/README.md) · [Back to portfolio](index.qmd)

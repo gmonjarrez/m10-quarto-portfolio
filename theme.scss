@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+$primary: #164a46;
+$secondary: #996b38;
+$body-bg: #faf9f5;
+$body-color: #233633;
+$link-color: #12645c;
+$font-family-sans-serif: "Avenir Next", "Segoe UI", sans-serif;
+$headings-font-family: Georgia, serif;
+$headings-color: #164a46;
+$border-radius: .5rem;
+$code-block-bg: #f0f3ef;
+
+/*-- scss:rules --*/
+.navbar-brand { font-weight: 650; letter-spacing: .025em; }
+h2 { margin-top: 2rem; }
+.portfolio-note {
+  border-left: 4px solid $secondary;
+  padding: 1rem 1.25rem;
+  background: mix($secondary, white, 9%);
+  border-radius: 0 $border-radius $border-radius 0;
+  strong { color: $primary; }
+}

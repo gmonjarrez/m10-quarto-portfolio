@@ -1,0 +1,268 @@
+[
+  {
+    "objectID": "submission.html",
+    "href": "submission.html",
+    "title": "M10 — Sharing Outputs with the Audience",
+    "section": "",
+    "text": "Published portfolio: Publication pending.\nGitHub repository: Publication pending."
+  },
+  {
+    "objectID": "submission.html#assignment-links",
+    "href": "submission.html#assignment-links",
+    "title": "M10 — Sharing Outputs with the Audience",
+    "section": "",
+    "text": "Published portfolio: Publication pending.\nGitHub repository: Publication pending."
+  },
+  {
+    "objectID": "submission.html#portfolio-contents",
+    "href": "submission.html#portfolio-contents",
+    "title": "M10 — Sharing Outputs with the Audience",
+    "section": "Portfolio contents",
+    "text": "Portfolio contents\nThe website contains a home page, a Quarto CEP dashboard, a CSS/SCSS explanation with applied examples, and a working Quarto project listing. QMD source, configuration, styles, and planning data are included in the repository.\nThe CEP dashboard summarizes the Kellogg Ranch research plan and my website-usability objective. It distinguishes planning targets from observed results; no participant data or performance results were supplied."
+  },
+  {
+    "objectID": "projects/quarto-communication.html",
+    "href": "projects/quarto-communication.html",
+    "title": "Share analysis through a Quarto portfolio",
+    "section": "",
+    "text": "How can an audience find the purpose, methods, and limitations of a project without reading raw code first?"
+  },
+  {
+    "objectID": "projects/quarto-communication.html#the-question",
+    "href": "projects/quarto-communication.html#the-question",
+    "title": "Share analysis through a Quarto portfolio",
+    "section": "",
+    "text": "How can an audience find the purpose, methods, and limitations of a project without reading raw code first?"
+  },
+  {
+    "objectID": "projects/quarto-communication.html#approach",
+    "href": "projects/quarto-communication.html#approach",
+    "title": "Share analysis through a Quarto portfolio",
+    "section": "Approach",
+    "text": "Approach\nThis M10 project combines a shared website configuration, QMD source documents, a static R-powered dashboard, a reusable SCSS theme, responsive CSS, and generated project listings. The main navigation offers four clear destinations. Downloadable CSV files make the dashboard’s planning inputs inspectable."
+  },
+  {
+    "objectID": "projects/quarto-communication.html#what-this-demonstrates",
+    "href": "projects/quarto-communication.html#what-this-demonstrates",
+    "title": "Share analysis through a Quarto portfolio",
+    "section": "What this demonstrates",
+    "text": "What this demonstrates\nA single source of truth reduces inconsistent numbers and duplicated presentation work. The dashboard derives its counts from local data, while the listing derives cards from document metadata. Readers can navigate the rendered output; source files remain available for review and reuse."
+  },
+  {
+    "objectID": "projects/quarto-communication.html#explore-the-implementation",
+    "href": "projects/quarto-communication.html#explore-the-implementation",
+    "title": "Share analysis through a Quarto portfolio",
+    "section": "Explore the implementation",
+    "text": "Explore the implementation\nHow the styling works · How the listing works"
+  },
+  {
+    "objectID": "listings.html",
+    "href": "listings.html",
+    "title": "Find a project",
+    "section": "",
+    "text": "Use the search box to find a topic, select a category to narrow the collection, or change the sort order. Each card leads to a short case summary explaining the question, approach, and learning demonstrated.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\nCEP\n\nCustomer research\n\n\n\nA CEP measurement plan for menus, hours, and the reservation journey.\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto\n\nCommunication\n\n\n\nA reproducible website with a dashboard, custom theme, and automatic listings.\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSQL\n\nAnalytics\n\n\n\nSQL and BigQuery coursework focused on preparing useful evidence.\n\n\n\nOct 21, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "listings.html#explore-the-portfolio",
+    "href": "listings.html#explore-the-portfolio",
+    "title": "Find a project",
+    "section": "",
+    "text": "Use the search box to find a topic, select a category to narrow the collection, or change the sort order. Each card leads to a short case summary explaining the question, approach, and learning demonstrated.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\nCEP\n\nCustomer research\n\n\n\nA CEP measurement plan for menus, hours, and the reservation journey.\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto\n\nCommunication\n\n\n\nA reproducible website with a dashboard, custom theme, and automatic listings.\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSQL\n\nAnalytics\n\n\n\nSQL and BigQuery coursework focused on preparing useful evidence.\n\n\n\nOct 21, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "listings.html#what-is-a-quarto-listing",
+    "href": "listings.html#what-is-a-quarto-listing",
+    "title": "Find a project",
+    "section": "What is a Quarto listing?",
+    "text": "What is a Quarto listing?\nA listing builds navigation from document metadata or structured data. Instead of manually maintaining a collection of links, I define a content folder and let Quarto generate cards when the website is rendered. Adding a new QMD project to projects/ brings it into this collection after the next render. Quarto’s listing guide documents grid, table, and default layouts."
+  },
+  {
+    "objectID": "listings.html#how-this-page-works",
+    "href": "listings.html#how-this-page-works",
+    "title": "Find a project",
+    "section": "How this page works",
+    "text": "How this page works\nThe page uses this configuration:\nlisting:\n  id: portfolio\n  contents: projects\n  type: grid\n  fields: [title, description, date, categories]\n  sort: \"date desc\"\n  categories: true\n  filter-ui: true\n  sort-ui: true\n  page-size: 6\ncontents selects the documents to include. type controls the layout; a grid suits a compact portfolio, while a table suits a larger index. fields controls the metadata displayed. The category, search, and sort controls help a visitor locate relevant work. The listing appears at the div whose ID matches portfolio.\nA project document supplies metadata like this:\n---\ntitle: \"Website usability research\"\ndescription: \"A measurement plan for a clearer dining-information journey.\"\ndate: 2026-10-24\ncategories: [CEP, Customer research]\n---\nThese dates identify portfolio entries, not dates on which a study was completed. I keep titles descriptive and summaries specific so readers can choose a project without first opening every document. Categories connect related skills across projects."
+  },
+  {
+    "objectID": "listings.html#keep-the-portfolio-useful-over-time",
+    "href": "listings.html#keep-the-portfolio-useful-over-time",
+    "title": "Find a project",
+    "section": "Keep the portfolio useful over time",
+    "text": "Keep the portfolio useful over time\nFor a new project, add a QMD file with a unique title, accurate date, concise description, and consistent categories. Explain the business question, methods, evidence, and limitations in the body. Render the entire website, check the new card and its destination, and publish the updated output. Listings update at render time; they do not monitor the folder continuously on the published site."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Marketing analytics · Customer insights\n\n\n\n\nI’m Georgia Monjarrez. My coursework connects customer research, digital marketing, and data analysis, with an emphasis on communicating findings clearly enough to support practical decisions.\n\nExplore my CEP dashboard Browse my projects"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Home",
+    "section": "About me",
+    "text": "About me\nThrough my work at Cal Poly Pomona, I am developing a foundation in survey research, SQL, BigQuery, R, and reproducible reporting with Quarto. In my Culminating Experience Project (CEP), I contribute to a digital marketing strategy for The Restaurant at Kellogg Ranch. My focus is website content, navigation, and usability: helping prospective guests find dining information and reach the reservation interface."
+  },
+  {
+    "objectID": "index.html#career-direction",
+    "href": "index.html#career-direction",
+    "title": "Home",
+    "section": "Career direction",
+    "text": "Career direction\nMy current project work points toward customer insights and digital marketing analytics, especially using research to improve online customer experiences. I want to translate business questions into measurable objectives and communicate the evidence behind recommendations."
+  },
+  {
+    "objectID": "index.html#education-applied-learning",
+    "href": "index.html#education-applied-learning",
+    "title": "Home",
+    "section": "Education & applied learning",
+    "text": "Education & applied learning\nCal Poly Pomona — current coursework\nCustomer Insight Methods and Survey Research (IBM 6500), digital marketing analytics, and the MSDM Culminating Experience Project. Degree title, prior education, and graduation date can be added after confirmation."
+  },
+  {
+    "objectID": "index.html#skills-in-practice",
+    "href": "index.html#skills-in-practice",
+    "title": "Home",
+    "section": "Skills in practice",
+    "text": "Skills in practice\nSQL & BigQuery Survey design R & visualization Quarto Research planning Digital marketing\n\n\nResearch\nTranslate customer questions into objectives, survey items, and usability tasks.\n\n\nAnalysis\nUse structured queries and reproducible code to prepare and summarize evidence.\n\n\nCommunication\nMake findings accessible through clear tables, dashboards, and organized reports."
+  },
+  {
+    "objectID": "index.html#what-you-can-explore",
+    "href": "index.html#what-you-can-explore",
+    "title": "Home",
+    "section": "What you can explore",
+    "text": "What you can explore\nThis portfolio brings together a CEP planning dashboard, an applied guide to CSS and SCSS, and a searchable project listing. The dashboard describes a research plan; it does not claim that planned observations or business outcomes have already occurred."
+  },
+  {
+    "objectID": "styling.html",
+    "href": "styling.html",
+    "title": "Style a Quarto website with CSS and SCSS",
+    "section": "",
+    "text": "A portfolio should make its purpose and navigation clear before asking the visitor to read technical details. On this site, a deep green establishes the navigation and headings, a warm accent highlights key information, and a neutral background keeps longer explanations readable. The same files style the whole website so individual pages feel connected."
+  },
+  {
+    "objectID": "styling.html#why-styling-matters",
+    "href": "styling.html#why-styling-matters",
+    "title": "Style a Quarto website with CSS and SCSS",
+    "section": "",
+    "text": "A portfolio should make its purpose and navigation clear before asking the visitor to read technical details. On this site, a deep green establishes the navigation and headings, a warm accent highlights key information, and a neutral background keeps longer explanations readable. The same files style the whole website so individual pages feel connected."
+  },
+  {
+    "objectID": "styling.html#css-and-scss-have-different-roles",
+    "href": "styling.html#css-and-scss-have-different-roles",
+    "title": "Style a Quarto website with CSS and SCSS",
+    "section": "CSS and SCSS have different roles",
+    "text": "CSS and SCSS have different roles\nCSS is the stylesheet language the browser reads. Selectors target HTML elements or classes, and declarations control properties such as spacing, color, and layout. SCSS is a Sass syntax that adds features such as variables and nesting. Quarto compiles SCSS into CSS during rendering. A browser does not load SCSS directly.\n\n\n\n\n\n\n\n\nFile\nRole in this portfolio\nExample\n\n\n\n\n_quarto.yml\nConnect shared theme and styles\ntheme: [cosmo, theme.scss]\n\n\ntheme.scss\nSet Bootstrap variables and reusable rules\n$primary: #164a46;\n\n\nstyles.css\nStyle page components and responsive behavior\n.feature-grid"
+  },
+  {
+    "objectID": "styling.html#connect-the-theme-to-the-website",
+    "href": "styling.html#connect-the-theme-to-the-website",
+    "title": "Style a Quarto website with CSS and SCSS",
+    "section": "Connect the theme to the website",
+    "text": "Connect the theme to the website\nThe project configuration applies these settings to HTML pages. The dashboard declares the same theme explicitly in its own format settings.\nformat:\n  html:\n    theme: [cosmo, theme.scss]\n    css: styles.css\nThe built-in theme is listed first, followed by the custom SCSS file. In Quarto’s theme pipeline, scss:defaults provides variables before Bootstrap is compiled, while scss:rules adds rules after the theme. This lets me change the palette consistently and then refine specific components. Quarto’s theming documentation explains these sections."
+  },
+  {
+    "objectID": "styling.html#use-scss-for-reusable-design-choices",
+    "href": "styling.html#use-scss-for-reusable-design-choices",
+    "title": "Style a Quarto website with CSS and SCSS",
+    "section": "Use SCSS for reusable design choices",
+    "text": "Use SCSS for reusable design choices\nThis is the actual component rule used by the note below:\n/*-- scss:defaults --*/\n$primary: #164a46;\n$secondary: #996b38;\n$border-radius: .5rem;\n\n/*-- scss:rules --*/\n.portfolio-note {\n  border-left: 4px solid $secondary;\n  padding: 1rem 1.25rem;\n  background: mix($secondary, white, 9%);\n  border-radius: 0 $border-radius $border-radius 0;\n  strong { color: $primary; }\n}\n\nApplied example: This note uses the .portfolio-note class. The border calls attention to the message, while the label explains its meaning without relying only on color.\n\nApply the class in a QMD file with a fenced div:\n::: {.portfolio-note}\n**Applied example:** A message that deserves emphasis.\n:::"
+  },
+  {
+    "objectID": "styling.html#use-css-for-layout-and-small-screen-behavior",
+    "href": "styling.html#use-css-for-layout-and-small-screen-behavior",
+    "title": "Style a Quarto website with CSS and SCSS",
+    "section": "Use CSS for layout and small-screen behavior",
+    "text": "Use CSS for layout and small-screen behavior\nThe home page’s three skill areas use CSS Grid. On smaller screens they stack vertically instead of squeezing text into narrow columns.\n.feature-grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1rem;\n}\n@media (max-width: 760px) {\n  .feature-grid { grid-template-columns: 1fr; }\n}\na:focus-visible, button:focus-visible, input:focus-visible {\n  outline: 3px solid #996b38;\n  outline-offset: 4px;\n}"
+  },
+  {
+    "objectID": "styling.html#the-cascade-specificity-and-maintainability",
+    "href": "styling.html#the-cascade-specificity-and-maintainability",
+    "title": "Style a Quarto website with CSS and SCSS",
+    "section": "The cascade, specificity, and maintainability",
+    "text": "The cascade, specificity, and maintainability\nWhen rules conflict, origin, importance, cascade layers, specificity, and source order affect which declaration wins. A class selector such as .demo-panel is more specific than an element selector such as div; among otherwise equivalent rules, the later one wins. I use component classes and shared variables instead of scattered inline styles or routine !important overrides. That makes later changes easier to trace.\n\nA styled component in the rendered page\nThis panel demonstrates custom padding, a border, rounded corners, and a heading color. It remains ordinary text that can be selected and read by assistive technology."
+  },
+  {
+    "objectID": "styling.html#check-the-result-from-the-readers-perspective",
+    "href": "styling.html#check-the-result-from-the-readers-perspective",
+    "title": "Style a Quarto website with CSS and SCSS",
+    "section": "Check the result from the reader’s perspective",
+    "text": "Check the result from the reader’s perspective\nAfter changing a style, render the website and review navigation, headings, long text, and the dashboard. Check wide and narrow windows, keyboard focus, descriptive link text, image alternative text, and chart labels. Do not use color as the only indicator of status. Keep the QMD content semantic so the styling improves the reading experience rather than carrying its meaning."
+  },
+  {
+    "objectID": "styling.html#references",
+    "href": "styling.html#references",
+    "title": "Style a Quarto website with CSS and SCSS",
+    "section": "References",
+    "text": "References\n\nQuarto: HTML theming\nQuarto: dashboard theming"
+  },
+  {
+    "objectID": "projects/cep-usability.html",
+    "href": "projects/cep-usability.html",
+    "title": "Make dining information easier to find",
+    "section": "",
+    "text": "Can prospective guests find The Restaurant at Kellogg Ranch’s menu, identify its operating hours, and reach the reservation interface without help?"
+  },
+  {
+    "objectID": "projects/cep-usability.html#the-question",
+    "href": "projects/cep-usability.html#the-question",
+    "title": "Make dining information easier to find",
+    "section": "",
+    "text": "Can prospective guests find The Restaurant at Kellogg Ranch’s menu, identify its operating hours, and reach the reservation interface without help?"
+  },
+  {
+    "objectID": "projects/cep-usability.html#my-contribution",
+    "href": "projects/cep-usability.html#my-contribution",
+    "title": "Make dining information easier to find",
+    "section": "My contribution",
+    "text": "My contribution\nIn the Group 9 CEP report, I am responsible for AO4, website content, navigation, and usability. The plan combines unassisted task-completion rates, median successful completion times, five-point ease ratings, and qualitative observations. Each task is compared with a proposed 80% completion target."
+  },
+  {
+    "objectID": "projects/cep-usability.html#what-this-demonstrates",
+    "href": "projects/cep-usability.html#what-this-demonstrates",
+    "title": "Make dining information easier to find",
+    "section": "What this demonstrates",
+    "text": "What this demonstrates\nThe work links an operational question to observable behavior and defined measures. It also separates reaching the reservation interface from making a reservation, keeping recommendations within the evidence the study can provide."
+  },
+  {
+    "objectID": "projects/cep-usability.html#current-evidence",
+    "href": "projects/cep-usability.html#current-evidence",
+    "title": "Make dining information easier to find",
+    "section": "Current evidence",
+    "text": "Current evidence\nThe portfolio includes the documented plan and structured task definitions. Participant-level results were not supplied, so the dashboard does not present performance estimates.\nOpen the CEP dashboard"
+  },
+  {
+    "objectID": "projects/sql-bigquery.html",
+    "href": "projects/sql-bigquery.html",
+    "title": "Turn customer questions into database queries",
+    "section": "",
+    "text": "How can structured data support marketing analysis and the CEP?"
+  },
+  {
+    "objectID": "projects/sql-bigquery.html#the-question",
+    "href": "projects/sql-bigquery.html#the-question",
+    "title": "Turn customer questions into database queries",
+    "section": "",
+    "text": "How can structured data support marketing analysis and the CEP?"
+  },
+  {
+    "objectID": "projects/sql-bigquery.html#approach",
+    "href": "projects/sql-bigquery.html#approach",
+    "title": "Turn customer questions into database queries",
+    "section": "Approach",
+    "text": "Approach\nMy earlier IBM 6500 portfolio brings together Introduction to SQL, Introduction to BigQuery, and Intermediate SQL learning notes and course-completion evidence. The examples connect database querying with marketing research questions."
+  },
+  {
+    "objectID": "projects/sql-bigquery.html#what-this-demonstrates",
+    "href": "projects/sql-bigquery.html#what-this-demonstrates",
+    "title": "Turn customer questions into database queries",
+    "section": "What this demonstrates",
+    "text": "What this demonstrates\nSQL provides a reproducible way to select relevant records, summarize observations, and connect related tables. Clear filters and denominators matter because a syntactically correct query can still answer the wrong business question. Before interpreting an aggregate, I need to understand the unit of analysis and check for duplicate rows and missing values."
+  },
+  {
+    "objectID": "projects/sql-bigquery.html#explore-the-source",
+    "href": "projects/sql-bigquery.html#explore-the-source",
+    "title": "Turn customer questions into database queries",
+    "section": "Explore the source",
+    "text": "Explore the source\nSQL and BigQuery learning repository"
+  }
+]

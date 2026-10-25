@@ -1,0 +1,20 @@
+---
+title: "M10 — Sharing Outputs with the Audience"
+author: "Georgia Monjarrez"
+date: 2026-10-24
+format:
+  html:
+    embed-resources: true
+toc: false
+---
+
+## Assignment links
+
+1. **Published portfolio:** Publication pending.
+2. **GitHub repository:** Publication pending.
+
+## Portfolio contents
+
+The website contains a home page, a Quarto CEP dashboard, a CSS/SCSS explanation with applied examples, and a working Quarto project listing. QMD source, configuration, styles, and planning data are included in the repository.
+
+The CEP dashboard summarizes the Kellogg Ranch research plan and my website-usability objective. It distinguishes planning targets from observed results; no participant data or performance results were supplied.

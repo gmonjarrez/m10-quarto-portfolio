@@ -1,0 +1,22 @@
+---
+title: "Share analysis through a Quarto portfolio"
+description: "A reproducible website with a dashboard, custom theme, and automatic listings."
+date: 2026-10-24
+categories: [Quarto, Communication]
+---
+
+## The question
+
+How can an audience find the purpose, methods, and limitations of a project without reading raw code first?
+
+## Approach
+
+This M10 project combines a shared website configuration, QMD source documents, a static R-powered dashboard, a reusable SCSS theme, responsive CSS, and generated project listings. The main navigation offers four clear destinations. Downloadable CSV files make the dashboard's planning inputs inspectable.
+
+## What this demonstrates
+
+A single source of truth reduces inconsistent numbers and duplicated presentation work. The dashboard derives its counts from local data, while the listing derives cards from document metadata. Readers can navigate the rendered output; source files remain available for review and reuse.
+
+## Explore the implementation
+
+[How the styling works](../styling.qmd) · [How the listing works](../listings.qmd)

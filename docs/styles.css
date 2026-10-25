@@ -1,0 +1,15 @@
+:root { --portfolio-accent: #996b38; }
+.hero { padding: 2.5rem 0 2rem; border-bottom: 1px solid #d5dfd9; }
+.eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: .8rem; font-weight: 700; color: #70502c; }
+.hero h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.06; max-width: 850px; }
+.lede { font-size: 1.25rem; line-height: 1.6; max-width: 760px; }
+.profile-placeholder { width: 210px; height: 210px; border-radius: 50%; background: #e8eee8; border: 2px dashed #738b80; display: grid; place-content: center; text-align: center; margin: 1rem auto; }
+.profile-placeholder b { font-family: Georgia, serif; font-size: 3rem; color: #164a46; }
+.profile-placeholder small { max-width: 160px; color: #354d47; }
+.skill { display: inline-block; background: #e7eeea; border: 1px solid #c9d8d0; border-radius: 2rem; padding: .35rem .8rem; margin: .25rem .2rem; }
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
+.feature { border-top: 3px solid #996b38; padding: 1.2rem; background: white; border-radius: .4rem; box-shadow: 0 4px 18px #164a4609; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #996b38; outline-offset: 4px; }
+.demo-panel { background: white; border: 1px solid #c9d8d0; padding: 1.4rem; border-radius: .5rem; }
+.demo-panel strong { color: #164a46; }
+@media(max-width: 760px) { .feature-grid { grid-template-columns: 1fr; } .hero { padding-top: 1rem; } }

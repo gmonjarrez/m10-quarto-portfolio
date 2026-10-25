@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - dashboard.qmd
+    - styling.qmd
+    - listings.qmd
+    - projects/*.qmd
+    - submission.qmd
+  resources:
+    - data/*
+    - assets/*
+website:
+  title: "Georgia Monjarrez"
+  description: "Marketing analytics, customer insights, and reproducible communication."
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: Home
+      - href: dashboard.qmd
+        text: CEP Dashboard
+      - href: styling.qmd
+        text: CSS / SCSS
+      - href: listings.qmd
+        text: Project Listings
+  page-footer:
+    left: "Georgia Monjarrez · M10 Learning Portfolio"
+    right: "Built with Quarto"
+  search: true
+format:
+  html:
+    theme: [cosmo, theme.scss]
+    css: styles.css
+    toc: true
+    code-copy: true
+    code-fold: true
+    code-summary: "View code"
+    smooth-scroll: true
+execute:
+  warning: false
+  message: false
+lang: en

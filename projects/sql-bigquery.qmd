@@ -1,0 +1,22 @@
+---
+title: "Turn customer questions into database queries"
+description: "SQL and BigQuery coursework focused on preparing useful evidence."
+date: 2026-10-21
+categories: [SQL, Analytics]
+---
+
+## The question
+
+How can structured data support marketing analysis and the CEP?
+
+## Approach
+
+My earlier IBM 6500 portfolio brings together Introduction to SQL, Introduction to BigQuery, and Intermediate SQL learning notes and course-completion evidence. The examples connect database querying with marketing research questions.
+
+## What this demonstrates
+
+SQL provides a reproducible way to select relevant records, summarize observations, and connect related tables. Clear filters and denominators matter because a syntactically correct query can still answer the wrong business question. Before interpreting an aggregate, I need to understand the unit of analysis and check for duplicate rows and missing values.
+
+## Explore the source
+
+[SQL and BigQuery learning repository](https://github.com/gmonjarrez/ibm-6500-sql-learning-portfolio)

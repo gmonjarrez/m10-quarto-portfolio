@@ -1,0 +1,61 @@
+---
+title: "Find a project"
+subtitle: "An automatically generated portfolio with searchable, categorized work"
+listing:
+  id: portfolio
+  contents: projects
+  type: grid
+  fields: [title, description, date, categories]
+  sort: "date desc"
+  categories: true
+  filter-ui: true
+  sort-ui: true
+  page-size: 6
+---
+
+## Explore the portfolio
+
+Use the search box to find a topic, select a category to narrow the collection, or change the sort order. Each card leads to a short case summary explaining the question, approach, and learning demonstrated.
+
+::: {#portfolio}
+:::
+
+## What is a Quarto listing?
+
+A listing builds navigation from document metadata or structured data. Instead of manually maintaining a collection of links, I define a content folder and let Quarto generate cards when the website is rendered. Adding a new QMD project to `projects/` brings it into this collection after the next render. [Quarto's listing guide](https://quarto.org/docs/websites/website-listings.html) documents grid, table, and default layouts.
+
+## How this page works
+
+The page uses this configuration:
+
+```yaml
+listing:
+  id: portfolio
+  contents: projects
+  type: grid
+  fields: [title, description, date, categories]
+  sort: "date desc"
+  categories: true
+  filter-ui: true
+  sort-ui: true
+  page-size: 6
+```
+
+`contents` selects the documents to include. `type` controls the layout; a grid suits a compact portfolio, while a table suits a larger index. `fields` controls the metadata displayed. The category, search, and sort controls help a visitor locate relevant work. The listing appears at the div whose ID matches `portfolio`.
+
+A project document supplies metadata like this:
+
+```yaml
+---
+title: "Website usability research"
+description: "A measurement plan for a clearer dining-information journey."
+date: 2026-10-24
+categories: [CEP, Customer research]
+---
+```
+
+These dates identify portfolio entries, not dates on which a study was completed. I keep titles descriptive and summaries specific so readers can choose a project without first opening every document. Categories connect related skills across projects.
+
+## Keep the portfolio useful over time
+
+For a new project, add a QMD file with a unique title, accurate date, concise description, and consistent categories. Explain the business question, methods, evidence, and limitations in the body. Render the entire website, check the new card and its destination, and publish the updated output. Listings update at render time; they do not monitor the folder continuously on the published site.

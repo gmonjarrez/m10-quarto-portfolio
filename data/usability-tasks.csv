@@ -1,0 +1,4 @@
+task,success_definition,benchmark_pct
+Find the menu,Locate the relevant dining menu without assistance,80
+Find operating hours,Identify hours for the specified service period without assistance,80
+Reach reservations,Reach the interface for starting a reservation without assistance,80

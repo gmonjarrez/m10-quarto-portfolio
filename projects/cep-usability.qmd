@@ -1,0 +1,24 @@
+---
+title: "Make dining information easier to find"
+description: "A CEP measurement plan for menus, hours, and the reservation journey."
+date: 2026-10-24
+categories: [CEP, Customer research]
+---
+
+## The question
+
+Can prospective guests find The Restaurant at Kellogg Ranch's menu, identify its operating hours, and reach the reservation interface without help?
+
+## My contribution
+
+In the Group 9 CEP report, I am responsible for AO4, website content, navigation, and usability. The plan combines unassisted task-completion rates, median successful completion times, five-point ease ratings, and qualitative observations. Each task is compared with a proposed 80% completion target.
+
+## What this demonstrates
+
+The work links an operational question to observable behavior and defined measures. It also separates reaching the reservation interface from making a reservation, keeping recommendations within the evidence the study can provide.
+
+## Current evidence
+
+The portfolio includes the documented plan and structured task definitions. Participant-level results were not supplied, so the dashboard does not present performance estimates.
+
+[Open the CEP dashboard](../dashboard.qmd){.btn .btn-primary}

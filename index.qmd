@@ -1,0 +1,65 @@
+---
+title: "Home"
+pagetitle: "Georgia Monjarrez | Marketing Analytics Portfolio"
+title-block-banner: false
+toc: false
+---
+
+::: {.hero}
+::: {.eyebrow}
+Marketing analytics · Customer insights
+:::
+
+# Turning questions into useful evidence {.unnumbered}
+
+::: {.lede}
+I’m Georgia Monjarrez. My coursework connects customer research, digital marketing, and data analysis, with an emphasis on communicating findings clearly enough to support practical decisions.
+:::
+
+[Explore my CEP dashboard](dashboard.qmd){.btn .btn-primary} [Browse my projects](listings.qmd){.btn .btn-outline-primary}
+:::
+
+::: {.columns}
+::: {.column width="72%"}
+## About me
+
+Through my work at Cal Poly Pomona, I am developing a foundation in survey research, SQL, BigQuery, R, and reproducible reporting with Quarto. In my Culminating Experience Project (CEP), I contribute to a digital marketing strategy for The Restaurant at Kellogg Ranch. My focus is website content, navigation, and usability: helping prospective guests find dining information and reach the reservation interface.
+
+## Career direction
+
+My current project work points toward customer insights and digital marketing analytics, especially using research to improve online customer experiences. I want to translate business questions into measurable objectives and communicate the evidence behind recommendations.
+
+## Education & applied learning
+
+**Cal Poly Pomona — current coursework**  
+Customer Insight Methods and Survey Research (IBM 6500), digital marketing analytics, and the MSDM Culminating Experience Project. Degree title, prior education, and graduation date can be added after confirmation.
+:::
+::: {.column width="28%"}
+<div class="profile-placeholder" role="img" aria-label="Photo placeholder for Georgia Monjarrez"><b>GM</b><small>Personal photo pending</small></div>
+
+*Photo space reserved for my own headshot.*
+:::
+:::
+
+## Skills in practice
+
+[SQL & BigQuery]{.skill} [Survey design]{.skill} [R & visualization]{.skill} [Quarto]{.skill} [Research planning]{.skill} [Digital marketing]{.skill}
+
+::: {.feature-grid}
+::: {.feature}
+### Research
+Translate customer questions into objectives, survey items, and usability tasks.
+:::
+::: {.feature}
+### Analysis
+Use structured queries and reproducible code to prepare and summarize evidence.
+:::
+::: {.feature}
+### Communication
+Make findings accessible through clear tables, dashboards, and organized reports.
+:::
+:::
+
+## What you can explore
+
+This portfolio brings together a CEP planning dashboard, an applied guide to CSS and SCSS, and a searchable project listing. The dashboard describes a research plan; it does not claim that planned observations or business outcomes have already occurred.

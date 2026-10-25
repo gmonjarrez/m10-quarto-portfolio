@@ -1,0 +1,10 @@
+[
+  {
+    "listing": "/listings.html",
+    "items": [
+      "/projects/cep-usability.html",
+      "/projects/quarto-communication.html",
+      "/projects/sql-bigquery.html"
+    ]
+  }
+]

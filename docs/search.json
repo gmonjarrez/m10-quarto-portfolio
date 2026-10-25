@@ -4,14 +4,14 @@
     "href": "submission.html",
     "title": "M10 — Sharing Outputs with the Audience",
     "section": "",
-    "text": "Published portfolio: Publication pending.\nGitHub repository: Publication pending."
+    "text": "Published portfolio: Not published; retained locally at my request.\nGitHub repository: Local repository only; public publication deferred."
   },
   {
     "objectID": "submission.html#assignment-links",
     "href": "submission.html#assignment-links",
     "title": "M10 — Sharing Outputs with the Audience",
     "section": "",
-    "text": "Published portfolio: Publication pending.\nGitHub repository: Publication pending."
+    "text": "Published portfolio: Not published; retained locally at my request.\nGitHub repository: Local repository only; public publication deferred."
   },
   {
     "objectID": "submission.html#portfolio-contents",
@@ -19,6 +19,13 @@
     "title": "M10 — Sharing Outputs with the Audience",
     "section": "Portfolio contents",
     "text": "Portfolio contents\nThe website contains a home page, a Quarto CEP dashboard, a CSS/SCSS explanation with applied examples, and a working Quarto project listing. QMD source, configuration, styles, and planning data are included in the repository.\nThe CEP dashboard summarizes the Kellogg Ranch research plan and my website-usability objective. It distinguishes planning targets from observed results; no participant data or performance results were supplied."
+  },
+  {
+    "objectID": "submission.html#before-final-submission",
+    "href": "submission.html#before-final-submission",
+    "title": "M10 — Sharing Outputs with the Audience",
+    "section": "Before final submission",
+    "text": "Before final submission\nAdd my personal photo and confirm the biography and career-direction wording. Publish the site and repository when ready, then replace the local-only notices above with the two clickable URLs required by the assignment."
   },
   {
     "objectID": "projects/quarto-communication.html",
@@ -91,13 +98,6 @@
     "text": "Keep the portfolio useful over time\nFor a new project, add a QMD file with a unique title, accurate date, concise description, and consistent categories. Explain the business question, methods, evidence, and limitations in the body. Render the entire website, check the new card and its destination, and publish the updated output. Listings update at render time; they do not monitor the folder continuously on the published site."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "Marketing analytics · Customer insights\n\n\n\n\nI’m Georgia Monjarrez. My coursework connects customer research, digital marketing, and data analysis, with an emphasis on communicating findings clearly enough to support practical decisions.\n\nExplore my CEP dashboard Browse my projects"
-  },
-  {
     "objectID": "index.html#about-me",
     "href": "index.html#about-me",
     "title": "Home",
@@ -116,7 +116,7 @@
     "href": "index.html#education-applied-learning",
     "title": "Home",
     "section": "Education & applied learning",
-    "text": "Education & applied learning\nCal Poly Pomona — current coursework\nCustomer Insight Methods and Survey Research (IBM 6500), digital marketing analytics, and the MSDM Culminating Experience Project. Degree title, prior education, and graduation date can be added after confirmation."
+    "text": "Education & applied learning\nCal Poly Pomona — current coursework\nCustomer Insight Methods and Survey Research (IBM 6500), digital marketing analytics, and the MSDM Culminating Experience Project."
   },
   {
     "objectID": "index.html#skills-in-practice",

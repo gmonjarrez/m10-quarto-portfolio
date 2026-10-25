@@ -2,6 +2,7 @@
 title: "Home"
 pagetitle: "Georgia Monjarrez | Marketing Analytics Portfolio"
 title-block-banner: false
+title-block-style: none
 toc: false
 ---
 
@@ -32,7 +33,7 @@ My current project work points toward customer insights and digital marketing an
 ## Education & applied learning
 
 **Cal Poly Pomona — current coursework**  
-Customer Insight Methods and Survey Research (IBM 6500), digital marketing analytics, and the MSDM Culminating Experience Project. Degree title, prior education, and graduation date can be added after confirmation.
+Customer Insight Methods and Survey Research (IBM 6500), digital marketing analytics, and the MSDM Culminating Experience Project.
 :::
 ::: {.column width="28%"}
 <div class="profile-placeholder" role="img" aria-label="Photo placeholder for Georgia Monjarrez"><b>GM</b><small>Personal photo pending</small></div>

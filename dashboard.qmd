@@ -44,6 +44,8 @@ list(icon = "flag", color = "primary", value = paste0(unique(tasks$benchmark_pct
 
 ### From awareness to a reservation
 
+**From awareness to a reservation**
+
 The Restaurant at Kellogg Ranch CEP connects newsletter design, guest experience, social media, and website usability to a more accessible guest journey. **My contribution is AO4: website content, navigation, and usability.**
 
 This dashboard summarizes the documented research plan. The counts above describe objectives and planned tasks, not measured performance. The 80% target is a proposed project benchmark, not a published usability standard.
@@ -51,6 +53,8 @@ This dashboard summarizes the documented research plan. The counts above describ
 [Home](index.qmd) · [Project listings](listings.qmd) · [Download objectives](data/cep-objectives.csv)
 
 ### Measurement map
+
+**Measurement map**
 
 ```{r}
 #| label: tbl-objectives
@@ -64,6 +68,8 @@ knitr::kable(objectives[c("objective", "channel", "primary_measure")],
 ## Row
 
 ### Three tasks, one transparent target
+
+**Three tasks, one transparent target**
 
 ```{r}
 #| label: fig-targets
@@ -83,6 +89,8 @@ ggplot(tasks, aes(x = benchmark_pct, y = reorder(task, -seq_along(task)))) +
 
 ### Evidence collection
 
+**Evidence collection**
+
 For each prospective guest, record task, unassisted success, elapsed seconds, ease rating (1–5), device, and observed navigation barriers. Avoid names or contact details in the analysis file.
 
 ```{r}
@@ -98,6 +106,8 @@ if (nrow(observations) == 0) {
 
 ### How results will inform decisions
 
+**How results will inform decisions**
+
 | Measure | Calculation | Decision supported |
 |---|---|---|
 | Unassisted completion | Successful unassisted attempts / valid attempts × 100 | Identify tasks below the proposed 80% target |
@@ -108,6 +118,8 @@ if (nrow(observations) == 0) {
 Report each denominator and missing-value count. A task with no valid attempts receives **NA**, not 0%. Small samples and device differences limit generalization. Reaching the reservation interface is not a completed reservation or evidence of revenue growth.
 
 ### Source & reproducibility
+
+**Source & reproducibility**
 
 Planning source: Group 9, *A Filling Recipe for Open Tables at Kellogg Ranch*, October 17, 2026 version. AO4 is attributed to Georgia Monjarrez in that report. The CSV files summarize the objectives and task definitions; no participant records are included.
 

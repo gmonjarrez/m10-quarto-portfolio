@@ -1,7 +1,7 @@
 :root { --portfolio-accent: #996b38; }
-.hero { padding: 2.5rem 0 2rem; border-bottom: 1px solid #d5dfd9; }
+.hero { padding: 1.5rem 0 2rem; border-bottom: 1px solid #d5dfd9; }
 .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: .8rem; font-weight: 700; color: #70502c; }
-.hero h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.06; max-width: 850px; }
+.hero h1 { font-size: clamp(2.4rem, 5vw, 3.7rem); line-height: 1.06; max-width: 850px; }
 .lede { font-size: 1.25rem; line-height: 1.6; max-width: 760px; }
 .profile-placeholder { width: 210px; height: 210px; border-radius: 50%; background: #e8eee8; border: 2px dashed #738b80; display: grid; place-content: center; text-align: center; margin: 1rem auto; }
 .profile-placeholder b { font-family: Georgia, serif; font-size: 3rem; color: #164a46; }

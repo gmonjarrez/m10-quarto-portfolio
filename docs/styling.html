@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Style a Quarto website with CSS and SCSS – Georgia Monjarrez</title>
+<title>CSS &amp; SCSS – Georgia Monjarrez</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -160,14 +160,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-styling-matters" id="toc-why-styling-matters" class="nav-link active" data-scroll-target="#why-styling-matters">Why styling matters</a></li>
-  <li><a href="#css-and-scss-have-different-roles" id="toc-css-and-scss-have-different-roles" class="nav-link" data-scroll-target="#css-and-scss-have-different-roles">CSS and SCSS have different roles</a></li>
-  <li><a href="#connect-the-theme-to-the-website" id="toc-connect-the-theme-to-the-website" class="nav-link" data-scroll-target="#connect-the-theme-to-the-website">Connect the theme to the website</a></li>
-  <li><a href="#use-scss-for-reusable-design-choices" id="toc-use-scss-for-reusable-design-choices" class="nav-link" data-scroll-target="#use-scss-for-reusable-design-choices">Use SCSS for reusable design choices</a></li>
-  <li><a href="#use-css-for-layout-and-small-screen-behavior" id="toc-use-css-for-layout-and-small-screen-behavior" class="nav-link" data-scroll-target="#use-css-for-layout-and-small-screen-behavior">Use CSS for layout and small-screen behavior</a></li>
-  <li><a href="#the-cascade-specificity-and-maintainability" id="toc-the-cascade-specificity-and-maintainability" class="nav-link" data-scroll-target="#the-cascade-specificity-and-maintainability">The cascade, specificity, and maintainability</a></li>
-  <li><a href="#check-the-result-from-the-readers-perspective" id="toc-check-the-result-from-the-readers-perspective" class="nav-link" data-scroll-target="#check-the-result-from-the-readers-perspective">Check the result from the reader’s perspective</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#styling-this-portfolio" id="toc-styling-this-portfolio" class="nav-link active" data-scroll-target="#styling-this-portfolio">Styling this portfolio</a></li>
+  <li><a href="#a-shared-theme" id="toc-a-shared-theme" class="nav-link" data-scroll-target="#a-shared-theme">A shared theme</a></li>
+  <li><a href="#responsive-layout" id="toc-responsive-layout" class="nav-link" data-scroll-target="#responsive-layout">Responsive layout</a></li>
   </ul>
 </nav>
     </div>
@@ -176,8 +171,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Style a Quarto website with CSS and SCSS</h1>
-<p class="subtitle lead">A consistent visual system that helps readers find and understand the work</p>
+<h1 class="title">CSS &amp; SCSS</h1>
+<p class="subtitle lead">A consistent style for clear communication</p>
 </div>
 
 
@@ -194,112 +189,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="why-styling-matters" class="level2">
-<h2 class="anchored" data-anchor-id="why-styling-matters">Why styling matters</h2>
-<p>A portfolio should make its purpose and navigation clear before asking the visitor to read technical details. On this site, a deep green establishes the navigation and headings, a warm accent highlights key information, and a neutral background keeps longer explanations readable. The same files style the whole website so individual pages feel connected.</p>
+<section id="styling-this-portfolio" class="level2">
+<h2 class="anchored" data-anchor-id="styling-this-portfolio">Styling this portfolio</h2>
+<p>CSS controls the appearance of a webpage, including its colors, typography, spacing, and layout. SCSS extends CSS with variables and nesting; Quarto compiles it into CSS when the site is rendered.</p>
+<p>This portfolio uses a deep green palette, warm accents, and a neutral background. Shared styles keep the home page, project summaries, and dashboard visually connected.</p>
 </section>
-<section id="css-and-scss-have-different-roles" class="level2">
-<h2 class="anchored" data-anchor-id="css-and-scss-have-different-roles">CSS and SCSS have different roles</h2>
-<p><strong>CSS</strong> is the stylesheet language the browser reads. Selectors target HTML elements or classes, and declarations control properties such as spacing, color, and layout. <strong>SCSS</strong> is a Sass syntax that adds features such as variables and nesting. Quarto compiles SCSS into CSS during rendering. A browser does not load SCSS directly.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Role in this portfolio</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>_quarto.yml</code></td>
-<td>Connect shared theme and styles</td>
-<td><code>theme: [cosmo, theme.scss]</code></td>
-</tr>
-<tr class="even">
-<td><code>theme.scss</code></td>
-<td>Set Bootstrap variables and reusable rules</td>
-<td><code>$primary: #164a46;</code></td>
-</tr>
-<tr class="odd">
-<td><code>styles.css</code></td>
-<td>Style page components and responsive behavior</td>
-<td><code>.feature-grid</code></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="connect-the-theme-to-the-website" class="level2">
-<h2 class="anchored" data-anchor-id="connect-the-theme-to-the-website">Connect the theme to the website</h2>
-<p>The project configuration applies these settings to HTML pages. The dashboard declares the same theme explicitly in its own format settings.</p>
+<section id="a-shared-theme" class="level2">
+<h2 class="anchored" data-anchor-id="a-shared-theme">A shared theme</h2>
+<p>The website configuration connects the built-in theme to my custom files:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">cosmo</span><span class="kw">,</span><span class="at"> theme.scss</span><span class="kw">]</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The built-in theme is listed first, followed by the custom SCSS file. In Quarto’s theme pipeline, <code>scss:defaults</code> provides variables before Bootstrap is compiled, while <code>scss:rules</code> adds rules after the theme. This lets me change the palette consistently and then refine specific components. <a href="https://quarto.org/docs/output-formats/html-themes.html">Quarto’s theming documentation</a> explains these sections.</p>
-</section>
-<section id="use-scss-for-reusable-design-choices" class="level2">
-<h2 class="anchored" data-anchor-id="use-scss-for-reusable-design-choices">Use SCSS for reusable design choices</h2>
-<p>This is the actual component rule used by the note below:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode scss code-with-copy"><code class="sourceCode scss"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*-- scss:defaults --*/</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="va">$primary</span>: <span class="cn">#164a46</span><span class="op">;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="va">$secondary</span>: <span class="cn">#996b38</span><span class="op">;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="va">$border-radius</span>: <span class="dv">.5</span><span class="dt">rem</span><span class="op">;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">/*-- scss:rules --*/</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">.portfolio-note</span> {</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-left</span>: <span class="dv">4</span><span class="dt">px</span> <span class="dv">solid</span> <span class="va">$secondary</span><span class="op">;</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span>: <span class="dv">1</span><span class="dt">rem</span> <span class="dv">1.25</span><span class="dt">rem</span><span class="op">;</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background</span>: <span class="fu">mix(</span><span class="va">$secondary</span><span class="op">,</span> <span class="cn">white</span><span class="op">,</span> <span class="dv">9</span><span class="dt">%</span><span class="fu">)</span><span class="op">;</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-radius</span>: <span class="dv">0</span> <span class="va">$border-radius</span> <span class="va">$border-radius</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  strong { <span class="kw">color</span>: <span class="va">$primary</span><span class="op">;</span> }</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>In <code>theme.scss</code>, variables such as <code>$primary</code> define consistent colors. The <code>scss:defaults</code> section sets theme variables, and <code>scss:rules</code> contains custom component styles. In <code>styles.css</code>, class selectors control elements such as the profile photo and project panels.</p>
 <div class="portfolio-note">
-<p><strong>Applied example:</strong> This note uses the <code>.portfolio-note</code> class. The border calls attention to the message, while the label explains its meaning without relying only on color.</p>
-</div>
-<p>Apply the class in a QMD file with a fenced div:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>::: {.portfolio-note}</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>**Applied example:** A message that deserves emphasis.</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="use-css-for-layout-and-small-screen-behavior" class="level2">
-<h2 class="anchored" data-anchor-id="use-css-for-layout-and-small-screen-behavior">Use CSS for layout and small-screen behavior</h2>
-<p>The home page’s three skill areas use CSS Grid. On smaller screens they stack vertically instead of squeezing text into narrow columns.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.feature-grid</span> {</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">grid</span><span class="op">;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">grid-template-columns</span><span class="ch">:</span> <span class="fu">repeat(</span><span class="dv">3</span><span class="op">,</span> <span class="dv">1</span><span class="dt">fr</span><span class="fu">)</span><span class="op">;</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">gap</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="im">@media</span> <span class="fu">(</span><span class="kw">max-width</span><span class="ch">:</span> <span class="dv">760</span><span class="dt">px</span><span class="fu">)</span> {</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.feature-grid</span> { <span class="kw">grid-template-columns</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">fr</span><span class="op">;</span> }</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>a<span class="in">:focus-visible</span><span class="op">,</span> button<span class="in">:focus-visible</span><span class="op">,</span> input<span class="in">:focus-visible</span> {</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">outline</span><span class="ch">:</span> <span class="dv">3</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#996b38</span><span class="op">;</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">outline-offset</span><span class="ch">:</span> <span class="dv">4</span><span class="dt">px</span><span class="op">;</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="the-cascade-specificity-and-maintainability" class="level2">
-<h2 class="anchored" data-anchor-id="the-cascade-specificity-and-maintainability">The cascade, specificity, and maintainability</h2>
-<p>When rules conflict, origin, importance, cascade layers, specificity, and source order affect which declaration wins. A class selector such as <code>.demo-panel</code> is more specific than an element selector such as <code>div</code>; among otherwise equivalent rules, the later one wins. I use component classes and shared variables instead of scattered inline styles or routine <code>!important</code> overrides. That makes later changes easier to trace.</p>
-<div class="demo-panel">
-<p><strong>A styled component in the rendered page</strong></p>
-<p>This panel demonstrates custom padding, a border, rounded corners, and a heading color. It remains ordinary text that can be selected and read by assistive technology.</p>
+<p><strong>Consistent design:</strong> This panel uses a reusable SCSS class for its accent border, background, and spacing.</p>
 </div>
 </section>
-<section id="check-the-result-from-the-readers-perspective" class="level2">
-<h2 class="anchored" data-anchor-id="check-the-result-from-the-readers-perspective">Check the result from the reader’s perspective</h2>
-<p>After changing a style, render the website and review navigation, headings, long text, and the dashboard. Check wide and narrow windows, keyboard focus, descriptive link text, image alternative text, and chart labels. Do not use color as the only indicator of status. Keep the QMD content semantic so the styling improves the reading experience rather than carrying its meaning.</p>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<ul>
-<li><a href="https://quarto.org/docs/output-formats/html-themes.html">Quarto: HTML theming</a></li>
-<li><a href="https://quarto.org/docs/dashboards/theming.html">Quarto: dashboard theming</a></li>
-</ul>
+<section id="responsive-layout" class="level2">
+<h2 class="anchored" data-anchor-id="responsive-layout">Responsive layout</h2>
+<p>The home page’s skill panels appear in three columns on larger screens and stack on smaller screens:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.feature-grid</span> {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">grid</span><span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">grid-template-columns</span><span class="ch">:</span> <span class="fu">repeat(</span><span class="dv">3</span><span class="op">,</span> <span class="dv">1</span><span class="dt">fr</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">gap</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="im">@media</span> <span class="fu">(</span><span class="kw">max-width</span><span class="ch">:</span> <span class="dv">760</span><span class="dt">px</span><span class="fu">)</span> {</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.feature-grid</span> { <span class="kw">grid-template-columns</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">fr</span><span class="op">;</span> }</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Readable spacing, visible keyboard focus, and descriptive image text support an accessible experience. Reusable classes keep design changes consistent across pages.</p>
+<p><a href="https://quarto.org/docs/output-formats/html-themes.html">Reference: Quarto HTML theming</a></p>
 
 
 </section>

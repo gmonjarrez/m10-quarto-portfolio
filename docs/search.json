@@ -21,13 +21,6 @@
     "text": "Portfolio contents\nThe website contains a home page, a Quarto CEP dashboard, a CSS/SCSS explanation with applied examples, and a working Quarto project listing. QMD source, configuration, styles, and planning data are included in the repository.\nThe CEP dashboard summarizes the Kellogg Ranch research plan and my website-usability objective. It distinguishes planning targets from observed results; no participant data or performance results were supplied."
   },
   {
-    "objectID": "submission.html#before-final-submission",
-    "href": "submission.html#before-final-submission",
-    "title": "M10 — Sharing Outputs with the Audience",
-    "section": "Before final submission",
-    "text": "Before final submission\nConfirm the biography and career-direction wording. Publish the site and repository when ready, then replace the local-only notices above with the two clickable URLs required by the assignment."
-  },
-  {
     "objectID": "projects/quarto-communication.html",
     "href": "projects/quarto-communication.html",
     "title": "Share analysis through a Quarto portfolio",
@@ -67,35 +60,14 @@
     "href": "listings.html",
     "title": "Find a project",
     "section": "",
-    "text": "Use the search box to find a topic, select a category to narrow the collection, or change the sort order. Each card leads to a short case summary explaining the question, approach, and learning demonstrated.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\nCEP\n\nCustomer research\n\n\n\nA CEP measurement plan for menus, hours, and the reservation journey.\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto\n\nCommunication\n\n\n\nA reproducible website with a dashboard, custom theme, and automatic listings.\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSQL\n\nAnalytics\n\n\n\nSQL and BigQuery coursework focused on preparing useful evidence.\n\n\n\nOct 21, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\nCEP\n\nCustomer research\n\n\n\nA CEP measurement plan for menus, hours, and the reservation journey.\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto\n\nCommunication\n\n\n\nA reproducible website with a dashboard, custom theme, and automatic listings.\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSQL\n\nAnalytics\n\n\n\nSQL and BigQuery coursework focused on preparing useful evidence.\n\n\n\nOct 21, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "listings.html#explore-the-portfolio",
-    "href": "listings.html#explore-the-portfolio",
+    "objectID": "listings.html#quarto-listings-in-this-portfolio",
+    "href": "listings.html#quarto-listings-in-this-portfolio",
     "title": "Find a project",
-    "section": "",
-    "text": "Use the search box to find a topic, select a category to narrow the collection, or change the sort order. Each card leads to a short case summary explaining the question, approach, and learning demonstrated.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\nCEP\n\nCustomer research\n\n\n\nA CEP measurement plan for menus, hours, and the reservation journey.\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto\n\nCommunication\n\n\n\nA reproducible website with a dashboard, custom theme, and automatic listings.\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSQL\n\nAnalytics\n\n\n\nSQL and BigQuery coursework focused on preparing useful evidence.\n\n\n\nOct 21, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "listings.html#what-is-a-quarto-listing",
-    "href": "listings.html#what-is-a-quarto-listing",
-    "title": "Find a project",
-    "section": "What is a Quarto listing?",
-    "text": "What is a Quarto listing?\nA listing builds navigation from document metadata or structured data. Instead of manually maintaining a collection of links, I define a content folder and let Quarto generate cards when the website is rendered. Adding a new QMD project to projects/ brings it into this collection after the next render. Quarto’s listing guide documents grid, table, and default layouts."
-  },
-  {
-    "objectID": "listings.html#how-this-page-works",
-    "href": "listings.html#how-this-page-works",
-    "title": "Find a project",
-    "section": "How this page works",
-    "text": "How this page works\nThe page uses this configuration:\nlisting:\n  id: portfolio\n  contents: projects\n  type: grid\n  fields: [title, description, date, categories]\n  sort: \"date desc\"\n  categories: true\n  filter-ui: true\n  sort-ui: true\n  page-size: 6\ncontents selects the documents to include. type controls the layout; a grid suits a compact portfolio, while a table suits a larger index. fields controls the metadata displayed. The category, search, and sort controls help a visitor locate relevant work. The listing appears at the div whose ID matches portfolio.\nA project document supplies metadata like this:\n---\ntitle: \"Website usability research\"\ndescription: \"A measurement plan for a clearer dining-information journey.\"\ndate: 2026-10-24\ncategories: [CEP, Customer research]\n---\nThese dates identify portfolio entries, not dates on which a study was completed. I keep titles descriptive and summaries specific so readers can choose a project without first opening every document. Categories connect related skills across projects."
-  },
-  {
-    "objectID": "listings.html#keep-the-portfolio-useful-over-time",
-    "href": "listings.html#keep-the-portfolio-useful-over-time",
-    "title": "Find a project",
-    "section": "Keep the portfolio useful over time",
-    "text": "Keep the portfolio useful over time\nFor a new project, add a QMD file with a unique title, accurate date, concise description, and consistent categories. Explain the business question, methods, evidence, and limitations in the body. Render the entire website, check the new card and its destination, and publish the updated output. Listings update at render time; they do not monitor the folder continuously on the published site."
+    "section": "Quarto listings in this portfolio",
+    "text": "Quarto listings in this portfolio\nA Quarto listing automatically organizes documents into a collection of cards, a table, or a list. This page uses a grid to bring together my CEP, analytics, and communication projects.\nEach card draws its title, description, date, and categories from the project document’s metadata. Search, category filters, and sorting help readers find relevant work. When project documents are added or updated, the collection reflects those changes after the website is rendered.\nThe listing is connected to the projects/ folder:\nlisting:\n  contents: projects\n  type: grid\n  categories: true\n  filter-ui: true\n  sort-ui: true\nThis approach keeps the portfolio organized without manually maintaining every project link.\nReference: Quarto document listings"
   },
   {
     "objectID": "index.html#about-me",
@@ -130,70 +102,35 @@
     "href": "index.html#what-you-can-explore",
     "title": "Home",
     "section": "What you can explore",
-    "text": "What you can explore\nThis portfolio brings together a CEP planning dashboard, an applied guide to CSS and SCSS, and a searchable project listing. The dashboard describes a research plan; it does not claim that planned observations or business outcomes have already occurred."
+    "text": "What you can explore\nThis portfolio brings together a CEP planning dashboard, an applied guide to CSS and SCSS, and a searchable project listing. The dashboard presents the Kellogg Ranch research plan and proposed usability measures."
   },
   {
     "objectID": "styling.html",
     "href": "styling.html",
-    "title": "Style a Quarto website with CSS and SCSS",
+    "title": "CSS & SCSS",
     "section": "",
-    "text": "A portfolio should make its purpose and navigation clear before asking the visitor to read technical details. On this site, a deep green establishes the navigation and headings, a warm accent highlights key information, and a neutral background keeps longer explanations readable. The same files style the whole website so individual pages feel connected."
+    "text": "CSS controls the appearance of a webpage, including its colors, typography, spacing, and layout. SCSS extends CSS with variables and nesting; Quarto compiles it into CSS when the site is rendered.\nThis portfolio uses a deep green palette, warm accents, and a neutral background. Shared styles keep the home page, project summaries, and dashboard visually connected."
   },
   {
-    "objectID": "styling.html#why-styling-matters",
-    "href": "styling.html#why-styling-matters",
-    "title": "Style a Quarto website with CSS and SCSS",
+    "objectID": "styling.html#styling-this-portfolio",
+    "href": "styling.html#styling-this-portfolio",
+    "title": "CSS & SCSS",
     "section": "",
-    "text": "A portfolio should make its purpose and navigation clear before asking the visitor to read technical details. On this site, a deep green establishes the navigation and headings, a warm accent highlights key information, and a neutral background keeps longer explanations readable. The same files style the whole website so individual pages feel connected."
+    "text": "CSS controls the appearance of a webpage, including its colors, typography, spacing, and layout. SCSS extends CSS with variables and nesting; Quarto compiles it into CSS when the site is rendered.\nThis portfolio uses a deep green palette, warm accents, and a neutral background. Shared styles keep the home page, project summaries, and dashboard visually connected."
   },
   {
-    "objectID": "styling.html#css-and-scss-have-different-roles",
-    "href": "styling.html#css-and-scss-have-different-roles",
-    "title": "Style a Quarto website with CSS and SCSS",
-    "section": "CSS and SCSS have different roles",
-    "text": "CSS and SCSS have different roles\nCSS is the stylesheet language the browser reads. Selectors target HTML elements or classes, and declarations control properties such as spacing, color, and layout. SCSS is a Sass syntax that adds features such as variables and nesting. Quarto compiles SCSS into CSS during rendering. A browser does not load SCSS directly.\n\n\n\n\n\n\n\n\nFile\nRole in this portfolio\nExample\n\n\n\n\n_quarto.yml\nConnect shared theme and styles\ntheme: [cosmo, theme.scss]\n\n\ntheme.scss\nSet Bootstrap variables and reusable rules\n$primary: #164a46;\n\n\nstyles.css\nStyle page components and responsive behavior\n.feature-grid"
+    "objectID": "styling.html#a-shared-theme",
+    "href": "styling.html#a-shared-theme",
+    "title": "CSS & SCSS",
+    "section": "A shared theme",
+    "text": "A shared theme\nThe website configuration connects the built-in theme to my custom files:\nformat:\n  html:\n    theme: [cosmo, theme.scss]\n    css: styles.css\nIn theme.scss, variables such as $primary define consistent colors. The scss:defaults section sets theme variables, and scss:rules contains custom component styles. In styles.css, class selectors control elements such as the profile photo and project panels.\n\nConsistent design: This panel uses a reusable SCSS class for its accent border, background, and spacing."
   },
   {
-    "objectID": "styling.html#connect-the-theme-to-the-website",
-    "href": "styling.html#connect-the-theme-to-the-website",
-    "title": "Style a Quarto website with CSS and SCSS",
-    "section": "Connect the theme to the website",
-    "text": "Connect the theme to the website\nThe project configuration applies these settings to HTML pages. The dashboard declares the same theme explicitly in its own format settings.\nformat:\n  html:\n    theme: [cosmo, theme.scss]\n    css: styles.css\nThe built-in theme is listed first, followed by the custom SCSS file. In Quarto’s theme pipeline, scss:defaults provides variables before Bootstrap is compiled, while scss:rules adds rules after the theme. This lets me change the palette consistently and then refine specific components. Quarto’s theming documentation explains these sections."
-  },
-  {
-    "objectID": "styling.html#use-scss-for-reusable-design-choices",
-    "href": "styling.html#use-scss-for-reusable-design-choices",
-    "title": "Style a Quarto website with CSS and SCSS",
-    "section": "Use SCSS for reusable design choices",
-    "text": "Use SCSS for reusable design choices\nThis is the actual component rule used by the note below:\n/*-- scss:defaults --*/\n$primary: #164a46;\n$secondary: #996b38;\n$border-radius: .5rem;\n\n/*-- scss:rules --*/\n.portfolio-note {\n  border-left: 4px solid $secondary;\n  padding: 1rem 1.25rem;\n  background: mix($secondary, white, 9%);\n  border-radius: 0 $border-radius $border-radius 0;\n  strong { color: $primary; }\n}\n\nApplied example: This note uses the .portfolio-note class. The border calls attention to the message, while the label explains its meaning without relying only on color.\n\nApply the class in a QMD file with a fenced div:\n::: {.portfolio-note}\n**Applied example:** A message that deserves emphasis.\n:::"
-  },
-  {
-    "objectID": "styling.html#use-css-for-layout-and-small-screen-behavior",
-    "href": "styling.html#use-css-for-layout-and-small-screen-behavior",
-    "title": "Style a Quarto website with CSS and SCSS",
-    "section": "Use CSS for layout and small-screen behavior",
-    "text": "Use CSS for layout and small-screen behavior\nThe home page’s three skill areas use CSS Grid. On smaller screens they stack vertically instead of squeezing text into narrow columns.\n.feature-grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1rem;\n}\n@media (max-width: 760px) {\n  .feature-grid { grid-template-columns: 1fr; }\n}\na:focus-visible, button:focus-visible, input:focus-visible {\n  outline: 3px solid #996b38;\n  outline-offset: 4px;\n}"
-  },
-  {
-    "objectID": "styling.html#the-cascade-specificity-and-maintainability",
-    "href": "styling.html#the-cascade-specificity-and-maintainability",
-    "title": "Style a Quarto website with CSS and SCSS",
-    "section": "The cascade, specificity, and maintainability",
-    "text": "The cascade, specificity, and maintainability\nWhen rules conflict, origin, importance, cascade layers, specificity, and source order affect which declaration wins. A class selector such as .demo-panel is more specific than an element selector such as div; among otherwise equivalent rules, the later one wins. I use component classes and shared variables instead of scattered inline styles or routine !important overrides. That makes later changes easier to trace.\n\nA styled component in the rendered page\nThis panel demonstrates custom padding, a border, rounded corners, and a heading color. It remains ordinary text that can be selected and read by assistive technology."
-  },
-  {
-    "objectID": "styling.html#check-the-result-from-the-readers-perspective",
-    "href": "styling.html#check-the-result-from-the-readers-perspective",
-    "title": "Style a Quarto website with CSS and SCSS",
-    "section": "Check the result from the reader’s perspective",
-    "text": "Check the result from the reader’s perspective\nAfter changing a style, render the website and review navigation, headings, long text, and the dashboard. Check wide and narrow windows, keyboard focus, descriptive link text, image alternative text, and chart labels. Do not use color as the only indicator of status. Keep the QMD content semantic so the styling improves the reading experience rather than carrying its meaning."
-  },
-  {
-    "objectID": "styling.html#references",
-    "href": "styling.html#references",
-    "title": "Style a Quarto website with CSS and SCSS",
-    "section": "References",
-    "text": "References\n\nQuarto: HTML theming\nQuarto: dashboard theming"
+    "objectID": "styling.html#responsive-layout",
+    "href": "styling.html#responsive-layout",
+    "title": "CSS & SCSS",
+    "section": "Responsive layout",
+    "text": "Responsive layout\nThe home page’s skill panels appear in three columns on larger screens and stack on smaller screens:\n.feature-grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1rem;\n}\n@media (max-width: 760px) {\n  .feature-grid { grid-template-columns: 1fr; }\n}\nReadable spacing, visible keyboard focus, and descriptive image text support an accessible experience. Reusable classes keep design changes consistent across pages.\nReference: Quarto HTML theming"
   },
   {
     "objectID": "projects/cep-usability.html",

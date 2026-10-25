@@ -91,7 +91,7 @@ ggplot(tasks, aes(x = benchmark_pct, y = reorder(task, -seq_along(task)))) +
 
 **Evidence collection**
 
-For each prospective guest, record task, unassisted success, elapsed seconds, ease rating (1–5), device, and observed navigation barriers. Avoid names or contact details in the analysis file.
+The planned usability study measures unassisted success, elapsed seconds, ease ratings (1–5), device type, and navigation barriers for each task. Analysis uses de-identified participant records.
 
 ```{r}
 #| results: asis
@@ -115,7 +115,7 @@ if (nrow(observations) == 0) {
 | Ease of use | Distribution of valid 1–5 ratings per task | Locate perceived friction |
 | Qualitative barriers | Code recurring notes by task | Prioritize specific label, content, or placement changes |
 
-Report each denominator and missing-value count. A task with no valid attempts receives **NA**, not 0%. Small samples and device differences limit generalization. Reaching the reservation interface is not a completed reservation or evidence of revenue growth.
+Results will include denominators and missing-value counts. A task with no valid attempts receives **NA**, not 0%. Small samples and device differences limit generalization. Reaching the reservation interface is not a completed reservation or evidence of revenue growth.
 
 ### Source & reproducibility
 
@@ -123,6 +123,6 @@ Report each denominator and missing-value count. A task with no valid attempts r
 
 Planning source: Group 9, *A Filling Recipe for Open Tables at Kellogg Ranch*, October 17, 2026 version. AO4 is attributed to Georgia Monjarrez in that report. The CSV files summarize the objectives and task definitions; no participant records are included.
 
-The value boxes, table, and target chart are generated from local CSV files by R during rendering. Quarto produces a static HTML dashboard that can be hosted on GitHub Pages without an R server. Edit the source and re-render to update it.
+The value boxes, table, and target chart are generated from local CSV files by R during rendering. Quarto produces a static HTML dashboard that can be hosted on GitHub Pages without an R server.
 
 [Read the data notes](data/README.md) · [Back to portfolio](index.qmd)

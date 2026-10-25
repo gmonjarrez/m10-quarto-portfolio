@@ -1,25 +1,17 @@
 ---
-title: "Style a Quarto website with CSS and SCSS"
-subtitle: "A consistent visual system that helps readers find and understand the work"
+title: "CSS & SCSS"
+subtitle: "A consistent style for clear communication"
 ---
 
-## Why styling matters
+## Styling this portfolio
 
-A portfolio should make its purpose and navigation clear before asking the visitor to read technical details. On this site, a deep green establishes the navigation and headings, a warm accent highlights key information, and a neutral background keeps longer explanations readable. The same files style the whole website so individual pages feel connected.
+CSS controls the appearance of a webpage, including its colors, typography, spacing, and layout. SCSS extends CSS with variables and nesting; Quarto compiles it into CSS when the site is rendered.
 
-## CSS and SCSS have different roles
+This portfolio uses a deep green palette, warm accents, and a neutral background. Shared styles keep the home page, project summaries, and dashboard visually connected.
 
-**CSS** is the stylesheet language the browser reads. Selectors target HTML elements or classes, and declarations control properties such as spacing, color, and layout. **SCSS** is a Sass syntax that adds features such as variables and nesting. Quarto compiles SCSS into CSS during rendering. A browser does not load SCSS directly.
+## A shared theme
 
-| File | Role in this portfolio | Example |
-|---|---|---|
-| `_quarto.yml` | Connect shared theme and styles | `theme: [cosmo, theme.scss]` |
-| `theme.scss` | Set Bootstrap variables and reusable rules | `$primary: #164a46;` |
-| `styles.css` | Style page components and responsive behavior | `.feature-grid` |
-
-## Connect the theme to the website
-
-The project configuration applies these settings to HTML pages. The dashboard declares the same theme explicitly in its own format settings.
+The website configuration connects the built-in theme to my custom files:
 
 ```yaml
 format:
@@ -28,43 +20,15 @@ format:
     css: styles.css
 ```
 
-The built-in theme is listed first, followed by the custom SCSS file. In Quarto's theme pipeline, `scss:defaults` provides variables before Bootstrap is compiled, while `scss:rules` adds rules after the theme. This lets me change the palette consistently and then refine specific components. [Quarto's theming documentation](https://quarto.org/docs/output-formats/html-themes.html) explains these sections.
-
-## Use SCSS for reusable design choices
-
-This is the actual component rule used by the note below:
-
-```scss
-/*-- scss:defaults --*/
-$primary: #164a46;
-$secondary: #996b38;
-$border-radius: .5rem;
-
-/*-- scss:rules --*/
-.portfolio-note {
-  border-left: 4px solid $secondary;
-  padding: 1rem 1.25rem;
-  background: mix($secondary, white, 9%);
-  border-radius: 0 $border-radius $border-radius 0;
-  strong { color: $primary; }
-}
-```
+In `theme.scss`, variables such as `$primary` define consistent colors. The `scss:defaults` section sets theme variables, and `scss:rules` contains custom component styles. In `styles.css`, class selectors control elements such as the profile photo and project panels.
 
 ::: {.portfolio-note}
-**Applied example:** This note uses the `.portfolio-note` class. The border calls attention to the message, while the label explains its meaning without relying only on color.
+**Consistent design:** This panel uses a reusable SCSS class for its accent border, background, and spacing.
 :::
 
-Apply the class in a QMD file with a fenced div:
+## Responsive layout
 
-```markdown
-::: {.portfolio-note}
-**Applied example:** A message that deserves emphasis.
-:::
-```
-
-## Use CSS for layout and small-screen behavior
-
-The home page's three skill areas use CSS Grid. On smaller screens they stack vertically instead of squeezing text into narrow columns.
+The home page's skill panels appear in three columns on larger screens and stack on smaller screens:
 
 ```css
 .feature-grid {
@@ -75,27 +39,8 @@ The home page's three skill areas use CSS Grid. On smaller screens they stack ve
 @media (max-width: 760px) {
   .feature-grid { grid-template-columns: 1fr; }
 }
-a:focus-visible, button:focus-visible, input:focus-visible {
-  outline: 3px solid #996b38;
-  outline-offset: 4px;
-}
 ```
 
-## The cascade, specificity, and maintainability
+Readable spacing, visible keyboard focus, and descriptive image text support an accessible experience. Reusable classes keep design changes consistent across pages.
 
-When rules conflict, origin, importance, cascade layers, specificity, and source order affect which declaration wins. A class selector such as `.demo-panel` is more specific than an element selector such as `div`; among otherwise equivalent rules, the later one wins. I use component classes and shared variables instead of scattered inline styles or routine `!important` overrides. That makes later changes easier to trace.
-
-::: {.demo-panel}
-**A styled component in the rendered page**
-
-This panel demonstrates custom padding, a border, rounded corners, and a heading color. It remains ordinary text that can be selected and read by assistive technology.
-:::
-
-## Check the result from the reader's perspective
-
-After changing a style, render the website and review navigation, headings, long text, and the dashboard. Check wide and narrow windows, keyboard focus, descriptive link text, image alternative text, and chart labels. Do not use color as the only indicator of status. Keep the QMD content semantic so the styling improves the reading experience rather than carrying its meaning.
-
-## References
-
-- [Quarto: HTML theming](https://quarto.org/docs/output-formats/html-themes.html)
-- [Quarto: dashboard theming](https://quarto.org/docs/dashboards/theming.html)
+[Reference: Quarto HTML theming](https://quarto.org/docs/output-formats/html-themes.html)

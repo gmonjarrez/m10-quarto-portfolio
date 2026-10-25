@@ -61,4 +61,4 @@ Make findings accessible through clear tables, dashboards, and organized reports
 
 ## What you can explore
 
-This portfolio brings together a CEP planning dashboard, an applied guide to CSS and SCSS, and a searchable project listing. The dashboard describes a research plan; it does not claim that planned observations or business outcomes have already occurred.
+This portfolio brings together a CEP planning dashboard, an applied guide to CSS and SCSS, and a searchable project listing. The dashboard presents the Kellogg Ranch research plan and proposed usability measures.
